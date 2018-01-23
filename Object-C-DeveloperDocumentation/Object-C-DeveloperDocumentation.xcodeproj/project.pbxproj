@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		FF8548C22016D68700ACF09A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8548C12016D68700ACF09A /* AppDelegate.m */; };
 		FF8548C52016D68700ACF09A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8548C42016D68700ACF09A /* ViewController.m */; };
-		FF8548C82016D68700ACF09A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8548C62016D68700ACF09A /* Main.storyboard */; };
 		FF8548CA2016D68700ACF09A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8548C92016D68700ACF09A /* Assets.xcassets */; };
 		FF8548CD2016D68700ACF09A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8548CB2016D68700ACF09A /* LaunchScreen.storyboard */; };
 		FF8548D02016D68700ACF09A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8548CF2016D68700ACF09A /* main.m */; };
+		FF8548DB2016E15F00ACF09A /* MainStoryboard_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8548DA2016E15F00ACF09A /* MainStoryboard_iphone.storyboard */; };
+		FF8548DD2016E17600ACF09A /* MainStoryboard_ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8548DC2016E17600ACF09A /* MainStoryboard_ipad.storyboard */; };
+		FF8548E42016E30200ACF09A /* SwiftHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8548E32016E30200ACF09A /* SwiftHomeTableViewController.swift */; };
+		FF8548E92016E33200ACF09A /* Object_CHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8548E82016E33200ACF09A /* Object_CHomeTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +24,18 @@
 		FF8548C12016D68700ACF09A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FF8548C32016D68700ACF09A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FF8548C42016D68700ACF09A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FF8548C72016D68700ACF09A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF8548C92016D68700ACF09A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF8548CC2016D68700ACF09A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF8548CE2016D68700ACF09A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF8548CF2016D68700ACF09A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF8548D92016E07E00ACF09A /* AppMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
+		FF8548DA2016E15F00ACF09A /* MainStoryboard_iphone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard_iphone.storyboard; sourceTree = "<group>"; };
+		FF8548DC2016E17600ACF09A /* MainStoryboard_ipad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard_ipad.storyboard; sourceTree = "<group>"; };
+		FF8548E22016E30100ACF09A /* Object-C-DeveloperDocumentation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Object-C-DeveloperDocumentation-Bridging-Header.h"; sourceTree = "<group>"; };
+		FF8548E32016E30200ACF09A /* SwiftHomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHomeTableViewController.swift; sourceTree = "<group>"; };
+		FF8548E72016E33200ACF09A /* Object_CHomeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Object_CHomeTableViewController.h; sourceTree = "<group>"; };
+		FF8548E82016E33200ACF09A /* Object_CHomeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Object_CHomeTableViewController.m; sourceTree = "<group>"; };
+		FF8548EA2016E6AD00ACF09A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,7 @@
 		FF8548B42016D68700ACF09A = {
 			isa = PBXGroup;
 			children = (
+				FF8548D62016DE5D00ACF09A /* Classes */,
 				FF8548BF2016D68700ACF09A /* Object-C-DeveloperDocumentation */,
 				FF8548BE2016D68700ACF09A /* Products */,
 			);
@@ -58,17 +69,55 @@
 		FF8548BF2016D68700ACF09A /* Object-C-DeveloperDocumentation */ = {
 			isa = PBXGroup;
 			children = (
+				FF8548D92016E07E00ACF09A /* AppMacro.h */,
+				FF8548EA2016E6AD00ACF09A /* PrefixHeader.pch */,
 				FF8548C02016D68700ACF09A /* AppDelegate.h */,
 				FF8548C12016D68700ACF09A /* AppDelegate.m */,
 				FF8548C32016D68700ACF09A /* ViewController.h */,
 				FF8548C42016D68700ACF09A /* ViewController.m */,
-				FF8548C62016D68700ACF09A /* Main.storyboard */,
+				FF8548DA2016E15F00ACF09A /* MainStoryboard_iphone.storyboard */,
+				FF8548DC2016E17600ACF09A /* MainStoryboard_ipad.storyboard */,
 				FF8548C92016D68700ACF09A /* Assets.xcassets */,
 				FF8548CB2016D68700ACF09A /* LaunchScreen.storyboard */,
 				FF8548CE2016D68700ACF09A /* Info.plist */,
 				FF8548CF2016D68700ACF09A /* main.m */,
 			);
 			path = "Object-C-DeveloperDocumentation";
+			sourceTree = "<group>";
+		};
+		FF8548D62016DE5D00ACF09A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FF8548D82016E04300ACF09A /* 我的封装 */,
+				FF8548D72016DEF800ACF09A /* section */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FF8548D72016DEF800ACF09A /* section */ = {
+			isa = PBXGroup;
+			children = (
+				FF8548DE2016E2C800ACF09A /* 一级目录 */,
+			);
+			path = section;
+			sourceTree = "<group>";
+		};
+		FF8548D82016E04300ACF09A /* 我的封装 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的封装";
+			sourceTree = "<group>";
+		};
+		FF8548DE2016E2C800ACF09A /* 一级目录 */ = {
+			isa = PBXGroup;
+			children = (
+				FF8548E32016E30200ACF09A /* SwiftHomeTableViewController.swift */,
+				FF8548E72016E33200ACF09A /* Object_CHomeTableViewController.h */,
+				FF8548E82016E33200ACF09A /* Object_CHomeTableViewController.m */,
+				FF8548E22016E30100ACF09A /* Object-C-DeveloperDocumentation-Bridging-Header.h */,
+			);
+			path = "一级目录";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +151,7 @@
 				TargetAttributes = {
 					FF8548BC2016D68700ACF09A = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -129,9 +179,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF8548DD2016E17600ACF09A /* MainStoryboard_ipad.storyboard in Resources */,
 				FF8548CD2016D68700ACF09A /* LaunchScreen.storyboard in Resources */,
 				FF8548CA2016D68700ACF09A /* Assets.xcassets in Resources */,
-				FF8548C82016D68700ACF09A /* Main.storyboard in Resources */,
+				FF8548DB2016E15F00ACF09A /* MainStoryboard_iphone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +195,8 @@
 			files = (
 				FF8548C52016D68700ACF09A /* ViewController.m in Sources */,
 				FF8548D02016D68700ACF09A /* main.m in Sources */,
+				FF8548E42016E30200ACF09A /* SwiftHomeTableViewController.swift in Sources */,
+				FF8548E92016E33200ACF09A /* Object_CHomeTableViewController.m in Sources */,
 				FF8548C22016D68700ACF09A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +204,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FF8548C62016D68700ACF09A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF8548C72016D68700ACF09A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FF8548CB2016D68700ACF09A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,12 +323,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L85DVLSC44;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/xiangfu/Documents/GitHub/FXProjectDemo/Object-C-DeveloperDocumentation/Object-C-DeveloperDocumentation/PrefixHeader.pch";
 				INFOPLIST_FILE = "Object-C-DeveloperDocumentation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FX.Object-C-DeveloperDocumentation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/section/一级目录/Object-C-DeveloperDocumentation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -292,12 +343,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L85DVLSC44;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/xiangfu/Documents/GitHub/FXProjectDemo/Object-C-DeveloperDocumentation/Object-C-DeveloperDocumentation/PrefixHeader.pch";
 				INFOPLIST_FILE = "Object-C-DeveloperDocumentation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FX.Object-C-DeveloperDocumentation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/section/一级目录/Object-C-DeveloperDocumentation-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
